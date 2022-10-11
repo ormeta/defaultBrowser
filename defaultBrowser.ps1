@@ -4,8 +4,8 @@
 #SendKeys
 $wshell = New-Object -ComObject wscript.shell 
 
-Start-Process -FilePath "control"
-
+Start-Process -FilePath "ms-settings:defaultapps"
+<#
 Start-Sleep 1
 for ($i = 0; $i -lt 12; $i++) {
     $wshell.SendKeys("+{TAB}")
@@ -26,7 +26,7 @@ for ($i = 0; $i -lt 3; $i++) {
     Start-sleep 1
 }
 $wshell.SendKeys("{ENTER}")
-
+#>
 Start-Sleep 1
 for ($i = 0; $i -lt 5; $i++) {
     $wshell.SendKeys("{TAB}")
